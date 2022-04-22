@@ -1,0 +1,40 @@
+body {
+  margin: 1.5em;
+  font-family: 'DM Sans';
+}
+
+.shapeimg {
+  position: absolute;
+  width: 1368px;
+  height: 768px;
+  left: -2px;
+  top: 0px;
+
+  background: rgba(255, 157, 1, 0.07);
+}
+
+.install {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  position: static;
+  width: 135px;
+  height: 43px;
+  left: 573px;
+  top: 0px;
+
+  /* Logo-primary */
+
+  background: linear-gradient(90deg, #FF8601 0%, #FF8801 41.32%, #FF9001 61.74%, #FF9D01 77.57%, #FFB000 90.96%, #FFC100 100%);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  margin: 0px 50px;
+}
