@@ -5,12 +5,145 @@ body {
 
 .shapeimg {
   position: absolute;
-  width: 1368px;
-  height: 768px;
-  left: -2px;
-  top: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  animation: introLoad 2s forwards;
+  //overflow: hidden;
+}
 
-  background: rgba(255, 157, 1, 0.07);
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  svg .iconify {
+    width: 5.5em;
+    height: 4em;
+    margin-top: -.6em;
+  }
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform .5s ease-in-out;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+
+    a {
+      color: black;
+      padding: .75em 2em;
+      display: block;
+      width: 100%;
+
+      &:hover {
+        background: rgb(58, 50, 50);
+      }
+    }
+  }
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+
+
+
+.hero {
+  h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+  }
+
+  .subhead {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+
+  }
+
+  .start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 143px;
+    height: 43px;
+    left: 10px;
+    top: 650px;
+
+    /* Logo-primary */
+
+    background: linear-gradient(90deg, #FF8601 0%, #FF8801 41.32%, #FF9001 61.74%, #FF9D01 77.57%, #FFB000 90.96%, #FFC100 100%);
+    border-radius: 10px;
+  }
+
+  .meet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 189px;
+    height: 43px;
+    left: 160px;
+    top: 650px;
+
+
+    border-radius: 10px;
+  }
+
+
+
+}
+
+.more-info {
+
+  margin-top: 180px;
+  
+  .title {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  .desc {
+    line-height: 1.5rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+  }
+
 }
 
 .install {
